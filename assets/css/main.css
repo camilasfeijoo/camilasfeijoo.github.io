@@ -4183,23 +4183,3 @@ select option { color:#111; background:#fff; }
 /* Footer to white too (optional) */
 #footer { background:#fff !important; color:#444; }
 #footer .copyright { color:#666; }
-
-/* kill Landed's landing overlay/fade */
-body.landing:before,
-body.landing:after {
-  animation: none !important;
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -ms-animation: none !important;
-  opacity: 0 !important;
-  display: none !important;
-  background: transparent !important;
-}
-
-/* make sure the header is visible when landing is kept */
-body.landing #header {
-  background: #fff !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,.08) !important;
-  position: fixed !important;
-}
-
