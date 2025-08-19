@@ -4109,3 +4109,78 @@ input, select, textarea {
 					}
 
 	}
+
+/* === Light theme overrides === */
+
+/* Page + default text */
+html, body { background:#fff !important; }
+body, input, select, textarea { color:#111 !important; }
+
+/* Headings/strong */
+h1,h2,h3,h4,h5,h6, strong, b { color:#111 !important; }
+
+/* Links */
+a { color:#0b63ce; border-bottom-color:rgba(0,0,0,.3); }
+a:hover { color:#0b63ce !important; }
+
+/* Hairlines & quotes */
+hr { border-bottom-color:rgba(0,0,0,.2) !important; }
+blockquote { border-left-color:rgba(0,0,0,.2) !important; }
+
+/* Header bar */
+#header {
+  background:#fff !important;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  color:#111 !important;
+}
+#header nav ul li a, #header nav ul li span { color:#111 !important; }
+#header nav ul li.active > a, #header nav ul li.active > span { color:#e44c65 !important; }
+/* Landed theme makes the header transparent on the landing page—undo that */
+body.landing #header {
+  background:#fff !important;
+  box-shadow:0 2px 6px rgba(0,0,0,.08) !important;
+  position:fixed !important;
+}
+
+/* Hero/banner (removes dark image overlay) */
+#banner {
+  background:#fff !important;
+  background-image:none !important;
+  box-shadow:none !important;
+}
+#banner:after { background:none !important; }
+#banner .content header h2,
+#banner .content header p { color:#111 !important; }
+
+/* “Spotlight” sections (the dark panels) */
+.spotlight { background:none !important; box-shadow:none !important; }
+.spotlight .content {
+  background:#fff !important;
+  border-color:#e5e7eb !important;
+  color:#111 !important;
+}
+
+/* Lists, tables, inputs look better with dark borders in light mode */
+ul.alt li { border-top-color:rgba(0,0,0,.15) !important; }
+table tbody tr { border-color:rgba(0,0,0,.15) !important; }
+table tbody tr:nth-child(2n+1) { background-color:rgba(0,0,0,.03) !important; }
+table thead, table tfoot { border-color:rgba(0,0,0,.15) !important; }
+
+input[type="text"], input[type="password"], input[type="email"],
+select, textarea {
+  border-color:rgba(0,0,0,.25) !important;
+  color:#111 !important;
+}
+select option { color:#111; background:#fff; }
+
+/* Buttons */
+.button, input[type="button"], input[type="submit"], input[type="reset"] {
+  color:#111 !important;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25);
+}
+.button.primary { color:#fff !important; } /* keep the pink primary as-is */
+
+/* Footer to white too (optional) */
+#footer { background:#fff !important; color:#444; }
+#footer .copyright { color:#666; }
+
