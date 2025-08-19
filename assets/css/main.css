@@ -4183,3 +4183,31 @@ select option { color:#111; background:#fff; }
 /* Footer to white too (optional) */
 #footer { background:#fff !important; color:#444; }
 #footer .copyright { color:#666; }
+
+
+/* Make icons inside portal circular */
+.portal-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.portal-link .icon {
+  border-radius: 50%;
+  border: 2px solid #444;
+  padding: 1.5rem;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.portal-link:hover .icon {
+  background: #444;
+  color: #fff;
+}
+
+.portal-link h3 {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+}
+
