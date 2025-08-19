@@ -64,8 +64,8 @@
 			  <div class="container">
 			    <!-- Heading -->
 			    <header class="major" style="text-align:center; margin-bottom:2rem;">
-			      <h2>Jump into the Guide</h2>
-			      <p>Pick a section to view setup steps, commands, tips, and examples.</p>
+			      <h2>Jump Into</h2>
+			      <p>Click where you want to go</p>
 			    </header>
 			
 			    <!-- Grid -->
@@ -101,21 +101,42 @@
 			  </div>
 			</section>
 
+			<!-- Buffer -->
+			<section id="setup" class="wrapper style1 special">
+			  <div class="container">
+			    <header class="major">
+			      <h2>Initial Setup</h2>
+			      <p>Carefully follow the next steps to ensure your environment is properly set up.</p>
+			    </header>
+			  </div>
+			</section>
+			
 			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
-						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
+			<section id="install" class="wrapper style1">
+			  <div class="container">
+			    <header class="major">
+			      <h2>Software Installation</h2>
+			      <p>Set up the LeRobot environment by running the following commands in the terminal:</p>
+			    </header>
+			
+			    <!-- Code block -->
+			    <div class="code-block">
+			      <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+			      <pre><code class="language-bash">
+			git clone https://github.com/huggingface/lerobot.git
+			cd lerobot
+			
+			conda create -y -n lerobot python=3.10
+			conda activate lerobot
+			
+			conda install ffmpeg -c conda-forge
+			
+			pip install -e .
+			      </code></pre>
+			    </div>
+			  </div>
+			</section>
+
 
 			<!-- Three -->
 				<section id="three" class="spotlight style3 left">
@@ -228,6 +249,7 @@
 	</body>
 
 </html>
+
 
 
 
